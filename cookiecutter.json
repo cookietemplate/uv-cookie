@@ -1,10 +1,12 @@
 {
     "project_name": "Untitled Project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "full_name": "Your Name",
-    "email": "your@email.address",
-    "github_username": "your-name",
-    "version": "0.1.0",
+    "kind": ["lib", "app", "script"],
+    "no_package": "n",
+    "backend": ["hatch", "flit", "pdm", "setuptools", "maturin", "scikit"],
+    "author_from": ["auto", "git", "none"],
+    "vcs": ["git", "none"],
+    "python": "3.11",
     "project_short_description": "",
     "open_source_license": [
         "Apache-2.0",
