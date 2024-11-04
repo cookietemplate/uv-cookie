@@ -129,7 +129,7 @@ if __name__ == "__main__":
         vcs="{{ cookiecutter.vcs }}",
         python="{{ cookiecutter.python }}",
     )
-    method_pyproject_toml()
     add_dev_dependencies()
+    method_pyproject_toml()
     if "{{ cookiecutter.vcs }}" == "git":
         init_git_repo()
