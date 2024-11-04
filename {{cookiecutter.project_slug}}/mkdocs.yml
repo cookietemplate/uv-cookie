@@ -1,0 +1,4 @@
+site_name: {{ cookiecutter.project_name }} Doc
+
+theme:
+  name: material
