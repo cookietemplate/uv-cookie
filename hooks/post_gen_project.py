@@ -123,7 +123,7 @@ if __name__ == "__main__":
         write_license_file("{{ cookiecutter.open_source_license }}")
     init_uv(
         kind="{{ cookiecutter.kind }}",
-        no_package="{{ cookiecutter.no_package }}".lower() == "y",
+        no_package={{ cookiecutter.no_package }},
         backend="{{ cookiecutter.backend }}",
         author_from="{{ cookiecutter.author_from }}",
         vcs="{{ cookiecutter.vcs }}",

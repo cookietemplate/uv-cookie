@@ -2,11 +2,13 @@
     "project_name": "Untitled Project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "kind": ["lib", "app", "script"],
-    "no_package": "n",
+    "no_package": false,
     "backend": ["hatch", "flit", "pdm", "setuptools", "maturin", "scikit"],
     "author_from": ["auto", "git", "none"],
     "vcs": ["git", "none"],
     "python": "3.11",
+    "__python_major_version": "{{ cookiecutter.python.split('.')[0] }}",
+    "__python_minor_version": "{{ cookiecutter.python.split('.')[1] }}",
     "project_short_description": "",
     "open_source_license": [
         "Apache-2.0",
@@ -24,5 +26,17 @@
         "LGPL-3.0-only",
         "LGPL-3.0-or-later",
         "ISC"
-    ]
+    ],
+    "__prompts__": {
+        "project_name": "Project Name",
+        "project_slug": "Project Slug(leave empty to use project name)",
+        "kind": "Project Kind",
+        "no_package": "No Package",
+        "backend": "Backend",
+        "author_from": "Author From",
+        "vcs": "Version Control System",
+        "python": "Python Version(e.g. 3.11, 3.9.2)",
+        "project_short_description": "Project Short Description",
+        "open_source_license": "Open Source License"
+    }
 }
