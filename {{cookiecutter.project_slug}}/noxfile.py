@@ -19,7 +19,7 @@ def lint(session, fix=False, unsafe=False):
 
 
 @nox.session
-def format(session, unsafe=False):
+def fmt(session, unsafe=False):
     session.install("ruff")
     command = ["ruff", "format"]
     if unsafe:
